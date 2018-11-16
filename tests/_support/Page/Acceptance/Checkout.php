@@ -3,9 +3,9 @@ namespace Page\Acceptance;
 
 class Checkout
 {
-    public static $URL = '/checkout/onepage/';
+    public static $URL = '/checkout/';
     public static $CART_URL = '/checkout/cart/';
-    public static $SUCCESS_URL = '/checkout/onepage/success';
+    public static $SUCCESS_URL = '/checkout/success';
 
     /**
      * Declare UI map for this page here. CSS or XPath allowed.

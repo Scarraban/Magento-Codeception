@@ -37,9 +37,8 @@ class CheckoutCest
         $I->amGoingTo('submit the form');
         $I->submitForm(Page\Catalog::$addToCartForm, array());
 
-        $I->expectTo('see the cart page');
-        $I->seeCurrentUrlEquals(Page\Checkout::$CART_URL);
         $I->expectTo('see a success message');
+        $I->waitForElement(Page\Catalog::$successMessage);
         $I->seeElement(Page\Catalog::$successMessage);
     }
 

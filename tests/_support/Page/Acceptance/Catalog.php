@@ -3,8 +3,8 @@ namespace Page\Acceptance;
 
 class Catalog
 {
-    public static $CATEGORY_URL = '/accessories/eyewear.html';
-    public static $CATEGORY_URL_17 = '/furniture.html';
+    public static $CATEGORY_URL = '/gear/watches.html';
+    public static $CATEGORY_URL_17 = '/sales.html';
 
     /**
      * Declare UI map for this page here. CSS or XPath allowed.
@@ -12,10 +12,10 @@ class Catalog
      * public static $formSubmitButton = "#mainForm input[type=submit]";
      */
 
-    public static $categoryFirstProduct = 'ul.products-grid.first li.item a';
+    public static $categoryFirstProduct = 'div.products-grid > ol.products.list > li.item:first-child a';
     public static $productBody = '.catalog-product-view';
     public static $addToCartForm = '#product_addtocart_form';
-    public static $successMessage = 'li.success-msg';
+    public static $successMessage = 'div.message-success';
 
     /**
      * @var \AcceptanceTester;
